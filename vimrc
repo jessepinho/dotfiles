@@ -75,6 +75,5 @@ let g:NERDTreeWinSize=29
 """""""""
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|sass\-cache)|node_modules|bower_components|_site$'
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Clear cache every time
 " silent! nmap <unique> <silent> <C-P> :ClearCtrlPCache<cr>\|:CtrlP<cr>
