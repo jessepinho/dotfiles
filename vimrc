@@ -44,15 +44,13 @@ let g:airline_theme='solarized'
 " AIRLINE "
 """"""""""
 
+let g:airline_section_b = ''
 "let g:airline#extensions#default#section_truncate_width = {
 "  \ 'b': 120,
 "  \ 'x': 60,
 "  \ 'y': 150,
 "  \ 'z': 45,
 "  \ }
-
-" Airline config
-let g:airline_section_b = ''
 
 " Backspace fix; see http://stackoverflow.com/a/5019353/974981
 set backspace=indent,eol,start
