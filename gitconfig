@@ -8,7 +8,6 @@
 [color]
 [alias]
   l = !"git log --pretty=oneline --graph --abbrev-commit | head -n 10"
-  mp = !"git checkout production; git merge master; git checkout master; git push --all"
   st = status
   co = checkout
 [color]
