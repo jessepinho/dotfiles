@@ -1,0 +1,20 @@
+[user]
+  name = Jesse Pinho
+  email = jesse@jessepinho.com
+[core]
+  ignorecase = true
+  editor = /usr/bin/vim
+  excludesfile = ~/.gitignore
+[color]
+[alias]
+  l = !"git log --pretty=oneline --graph --abbrev-commit | head -n 10"
+  mp = !"git checkout production; git merge master; git checkout master; git push --all"
+  st = status
+  co = checkout
+[color]
+  ui = true
+  diff = always
+[push]
+  default = simple
+[include]
+  path = ~/.gitconfig_local

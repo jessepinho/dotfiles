@@ -1,5 +1,6 @@
 - clean: []
 - link:
+    ~/.gitconfig: gitconfig
     ~/.vim: vim/
     ~/.vimrc: vimrc
 - shell: []
