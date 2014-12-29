@@ -41,6 +41,19 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
 "set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 
+" AIRLINE "
+""""""""""
+
+"let g:airline#extensions#default#section_truncate_width = {
+"  \ 'b': 120,
+"  \ 'x': 60,
+"  \ 'y': 150,
+"  \ 'z': 45,
+"  \ }
+
+" Airline config
+let g:airline_section_b = ''
+
 " Backspace fix; see http://stackoverflow.com/a/5019353/974981
 set backspace=indent,eol,start
 
@@ -64,3 +77,6 @@ let g:NERDTreeWinSize=29
 """""""""
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|sass\-cache)|node_modules|bower_components|_site$'
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+" Clear cache every time
+" silent! nmap <unique> <silent> <C-P> :ClearCtrlPCache<cr>\|:CtrlP<cr>
