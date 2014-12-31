@@ -7,9 +7,10 @@
   excludesfile = ~/.gitignore
 [color]
 [alias]
-  l = !"git log --pretty=oneline --graph --abbrev-commit | head -n 10"
-  st = status
+  br = branch
   co = checkout
+  l  = !"git log --pretty=oneline --graph --abbrev-commit | head -n 10"
+  st = status
 [color]
   ui = true
   diff = always
