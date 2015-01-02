@@ -59,7 +59,7 @@ set backspace=indent,eol,start
 """"""""""""
 
 " Load NERDTree by default
-"autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree
 
 " Close NERDTree if it's the last buffer left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
