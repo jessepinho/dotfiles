@@ -13,6 +13,9 @@ set smartindent
 set mouse=a
 set number
 
+" Make search case-insensitive by default
+set ignorecase
+
 " Highlight the 81st character of each line (to show where to wrap)
 set colorcolumn=81
 
