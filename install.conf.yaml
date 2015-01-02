@@ -3,4 +3,5 @@
     ~/.gitconfig: gitconfig
     ~/.vim: vim/
     ~/.vimrc: vimrc
-- shell: []
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
