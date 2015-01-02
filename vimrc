@@ -42,7 +42,6 @@ set background=dark
 colorscheme solarized
 let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
-"set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 
 " AIRLINE "
 """"""""""
