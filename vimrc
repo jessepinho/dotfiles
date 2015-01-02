@@ -40,24 +40,22 @@ set t_Co=256
 set background=dark
 "let g:solarized_termcolors=256
 colorscheme solarized
-let g:airline_powerline_fonts=1
-let g:airline_theme='solarized'
-
-" AIRLINE "
-""""""""""
-
-let g:airline_section_b = ''
-"let g:airline#extensions#default#section_truncate_width = {
-"  \ 'b': 120,
-"  \ 'x': 60,
-"  \ 'y': 150,
-"  \ 'z': 45,
-"  \ }
 
 " Backspace fix; see http://stackoverflow.com/a/5019353/974981
 set backspace=indent,eol,start
 
-" NERDTREE "
+" ctrlp "
+"""""""""
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|sass\-cache)|node_modules|bower_components|tmp|_site$',
+  \ 'file': '',
+  \ 'link': '',
+  \ }
+" Clear cache every time
+" silent! nmap <unique> <silent> <C-P> :ClearCtrlPCache<cr>\|:CtrlP<cr>
+
+" NERDTree "
 """"""""""""
 
 " Load NERDTree by default
@@ -73,13 +71,15 @@ let NERDTreeShowHidden=1
 " 81, with the last character highlighted to show that it's the boundary
 let g:NERDTreeWinSize=29
 
-" CtrlP "
-"""""""""
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|sass\-cache)|node_modules|bower_components|tmp|_site$',
-  \ 'file': '',
-  \ 'link': '',
-  \ }
-" Clear cache every time
-" silent! nmap <unique> <silent> <C-P> :ClearCtrlPCache<cr>\|:CtrlP<cr>
+" vim-airline  "
+""""""""""""""""
+
+let g:airline_powerline_fonts=1
+let g:airline_theme='solarized'
+let g:airline_section_b = ''
+"let g:airline#extensions#default#section_truncate_width = {
+"  \ 'b': 120,
+"  \ 'x': 60,
+"  \ 'y': 150,
+"  \ 'z': 45,
+"  \ }
