@@ -1,5 +1,6 @@
 - clean: []
 - link:
+    ~/.ackrc: ackrc
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.vim: vim/
