@@ -9,6 +9,7 @@
 [alias]
   br = branch
   co = checkout
+  d = diff --color-words
   l  = !"git log --pretty=oneline --graph --abbrev-commit | head -n 10"
   st = status
 [color]
