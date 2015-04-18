@@ -1,48 +1,28 @@
 execute pathogen#infect()
 
-" Highlight Markdown properly (http://stackoverflow.com/a/23279293/974981)
-autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd BufNewFile,BufRead *.md set filetype=markdown " Highlight Markdown properly (http://stackoverflow.com/a/23279293/974981)
+colorscheme solarized
+autocmd BufWritePre * :%s/\s\+$//e " Strip trailing whitespace on save
+syntax on
 
+set background=dark
+set backspace=indent,eol,start " Backspace fix; see http://stackoverflow.com/a/5019353/974981
+set colorcolumn=81 " Highlight the 81st character of each line (to show where to wrap)
 set exrc " Enable per-directory .vimrc files
-set secure " Disable unsafe commands in per-directory .vimrc files
+set laststatus=2 " Always show the status line
 set expandtab
+set guifont=Menlo\ for\ Powerline:h9 " For Airline
+set guioptions-=L " Disable the left-hand scrollbar for NERDTree, per http://stackoverflow.com/a/4007704/974981
+set guioptions-=r " Disable the right-hand scrollbar
+set ignorecase " Make search case-insensitive by default
 set tabstop=2
 set shiftwidth=2
 set autoindent
 set smartindent
 set mouse=a
 set number
-
-" Make search case-insensitive by default
-set ignorecase
-
-" Highlight the 81st character of each line (to show where to wrap)
-set colorcolumn=81
-
-" Always show the status line
-set laststatus=2
-
-" For Airline
-set guifont=Menlo\ for\ Powerline:h9
-
-" Disable the left-hand scrollbar for NERDTree, per
-" http://stackoverflow.com/a/4007704/974981
-set guioptions-=L
-
-" Disable the right-hand scrollbar
-set guioptions-=r
-
-" Strip trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
-
-syntax on
+set secure " Disable unsafe commands in per-directory .vimrc files
 set t_Co=256
-set background=dark
-"let g:solarized_termcolors=256
-colorscheme solarized
-
-" Backspace fix; see http://stackoverflow.com/a/5019353/974981
-set backspace=indent,eol,start
 
 " ctrlp "
 """""""""
@@ -52,12 +32,9 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '',
   \ 'link': '',
   \ }
-" Clear cache every time
-" silent! nmap <unique> <silent> <C-P> :ClearCtrlPCache<cr>\|:CtrlP<cr>
 
 " NERDTree "
 """"""""""""
-
 " Load NERDTree by default
 autocmd vimenter * NERDTree
 
@@ -73,13 +50,6 @@ let g:NERDTreeWinSize=29
 
 " vim-airline  "
 """"""""""""""""
-
 let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
 let g:airline_section_b = ''
-"let g:airline#extensions#default#section_truncate_width = {
-"  \ 'b': 120,
-"  \ 'x': 60,
-"  \ 'y': 150,
-"  \ 'z': 45,
-"  \ }
