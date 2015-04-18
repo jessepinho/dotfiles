@@ -3,6 +3,7 @@
     ~/.ackrc: ackrc
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
+    ~/.rspec: rspec
     ~/.vim: vim/
     ~/.vimrc: vimrc
 - shell:
