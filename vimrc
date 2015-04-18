@@ -3,6 +3,7 @@ execute pathogen#infect()
 autocmd BufNewFile,BufRead *.md set filetype=markdown " Highlight Markdown properly (http://stackoverflow.com/a/23279293/974981)
 colorscheme solarized
 autocmd BufWritePre * :%s/\s\+$//e " Strip trailing whitespace on save
+filetype indent on " Enable filetype-specific indenting
 syntax on
 
 set background=dark
