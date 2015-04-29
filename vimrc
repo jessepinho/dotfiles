@@ -3,7 +3,7 @@ execute pathogen#infect()
 autocmd BufNewFile,BufRead *.md set filetype=markdown " Highlight Markdown properly (http://stackoverflow.com/a/23279293/974981)
 colorscheme solarized
 autocmd BufWritePre * :%s/\s\+$//e " Strip trailing whitespace on save
-filetype indent on " Enable filetype-specific indenting
+filetype plugin indent on " Enable filetype-specific indenting
 syntax on
 
 set background=dark
@@ -19,7 +19,6 @@ set ignorecase " Make search case-insensitive by default
 set tabstop=2
 set shiftwidth=2
 set autoindent
-set smartindent
 set mouse=a
 set number
 set secure " Disable unsafe commands in per-directory .vimrc files
