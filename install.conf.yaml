@@ -1,8 +1,10 @@
 - clean: []
 - link:
     ~/.ackrc: ackrc
+    ~/.bash_profile: .bash_profile
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
+    ~/.git-completion.bash: .git-completion.bash
     ~/.rspec: rspec
     ~/.vim: vim/
     ~/.vimrc: vimrc
