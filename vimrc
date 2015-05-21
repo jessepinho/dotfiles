@@ -41,12 +41,9 @@ autocmd vimenter * NERDTree
 " Close NERDTree if it's the last buffer left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" Show hidden files
-let NERDTreeShowHidden=1
-
-" A width of 29 allows three columns to stack up in vim perfectly at a width of
-" 81, with the last character highlighted to show that it's the boundary
-let g:NERDTreeWinSize=29
+let g:NERDTreeWinSize=29 " A width of 29 allows three columns to stack up in vim perfectly at a width of 81, with the last character highlighted to show that it's the boundary
+let NERDTreeIgnore=['\.swp$', '\.swo$'] " Ignore vim swapfiles
+let NERDTreeShowHidden=1 " Show hidden files
 
 " vim-airline  "
 """"""""""""""""
