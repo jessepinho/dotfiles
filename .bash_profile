@@ -9,6 +9,10 @@ export PATH="$HOME/.bin:/usr/local/bin:$PATH:$HOME/.node_modules/bin" # Make any
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
 export PS1='\W$ ' # Only show the current directory in bash prompt
 
+# Set up NVM.
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # Load RVM into a shell session *as a function*.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
