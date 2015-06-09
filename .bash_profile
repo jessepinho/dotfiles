@@ -28,3 +28,8 @@ alias very='git'
 alias wow='git'
 
 ulimit -n 4096
+
+# Include a local .bash_profile, if it exists.
+if [ -f ~/.bash_profile_local ]; then
+  source ~/.bash_profile_local
+fi
