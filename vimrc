@@ -29,7 +29,7 @@ set t_Co=256
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn|sass\-cache)|node_modules|bower_components|tmp|_site$',
-  \ 'file': '',
+  \ 'file': '\v.*\.(swp|swo)$',
   \ 'link': '',
   \ }
 
