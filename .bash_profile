@@ -35,12 +35,13 @@ if [ -f ~/.bash_profile_local ]; then
 fi
 
 function setUpCodeDirectoryAliases {
+  local file
   # Iterate over all files in ~/Code
   for file in ~/Code/*; do
     # Filter for just directories
     if [ -d $file ]; then
       # Get the directory name without the full path
-      aliasName=$(basename $file)
+      local aliasName=$(basename $file)
       # Make sure the directory's name isn't already a command in bash
       if ! command -v $aliasName >/dev/null 2>&1; then
         # Create an alias named after the directory that cd's into it
