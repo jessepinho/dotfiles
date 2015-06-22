@@ -7,7 +7,11 @@ source ~/.git-completion.bash
 export EDITOR=vim # Use vim as the default editor.
 export PATH="$HOME/.bin:/usr/local/bin:$PATH:$HOME/.node_modules/bin" # Make any node executables accessible.
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
-export PS1='\W$ ' # Only show the current directory in bash prompt
+
+color='\e[1;31m' # http://webhome.csc.uvic.ca/~sae/seng265/fall04/tips/s265s047-tips/bash-using-colors.html
+endColor='\e[0m'
+currentDirectory='\W' # Only show the current directory
+export PS1="${currentDirectory}${color}\$${endColor} " # Format the bash prompt
 
 # Set up NVM.
 export NVM_DIR=~/.nvm
@@ -17,6 +21,7 @@ source $(brew --prefix nvm)/nvm.sh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 alias be='bundle exec'
+alias dotfiles='cd ~/.dotfiles'
 alias ll='ls -l'
 
 # Allow Doge Git commands, like "such commit," or "very push." Because it's
