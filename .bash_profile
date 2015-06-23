@@ -12,6 +12,7 @@ color='\e[1;31m' # http://webhome.csc.uvic.ca/~sae/seng265/fall04/tips/s265s047-
 endColor='\e[0m'
 currentDirectory='\W' # Only show the current directory
 export PS1="${currentDirectory}${color}\$${endColor} " # Format the bash prompt
+export PS2="${color}> ${endColor}" # Format the continuation interactive prompt
 
 # Set up NVM.
 export NVM_DIR=~/.nvm
