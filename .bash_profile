@@ -1,3 +1,7 @@
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 # Use vim key bindings.
 set -o vi
 
@@ -9,7 +13,7 @@ export PATH="$HOME/.bin:/usr/local/bin:$PATH:$HOME/.node_modules/bin" # Make any
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
 
 currentDirectory='\W' # Only show the current directory
-export PS1="${currentDirectory}$ " # Format the bash prompt
+export PS1="${currentDirectory}\e\[\033[32m\]$(parse_git_branch)\e\[\033[00m\]$ " # Format the bash prompt
 export PS2="> " # Format the continuation interactive prompt
 
 # Set up NVM.
