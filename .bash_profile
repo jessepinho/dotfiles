@@ -9,8 +9,9 @@ set -o vi
 source ~/.git-completion.bash
 
 export EDITOR=vim # Use vim as the default editor.
-export PATH="$HOME/.bin:/usr/local/bin:$PATH:$HOME/.node_modules/bin" # Make any node executables accessible.
+export PATH="$HOME/.bin:/usr/local/bin:$PATH:$HOME/.node_modules/bin" # Make any node executables accessible
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
+export PATH="./node_modules/.bin:$PATH" # Make node executables in the current node project accessible
 
 currentDirectory='\W' # Only show the current directory
 export PS1="${currentDirectory}\e\[\033[32m\]$(parse_git_branch)\e\[\033[00m\]$ " # Format the bash prompt
