@@ -22,6 +22,10 @@ source $(brew --prefix nvm)/nvm.sh
 
 alias be='bundle exec'
 alias dotfiles='cd ~/.dotfiles'
+alias goph='git push origin head'
+alias gpoh='git push origin head'
+alias gpohf='git push origin head --force'
+alias gpohu='git push origin head -u'
 alias ll='ls -l'
 
 # Allow Doge Git commands, like "such commit," or "very push." Because it's
