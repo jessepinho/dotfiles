@@ -26,7 +26,7 @@ alias goph='git push origin head'
 alias gpoh='git push origin head'
 alias gpohf='git push origin head --force'
 alias gpohu='git push origin head -u'
-alias ll='ls -l'
+alias ll='ls -alh'
 
 # Allow Doge Git commands, like "such commit," or "very push." Because it's
 # important.
