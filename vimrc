@@ -35,8 +35,8 @@ let g:ctrlp_custom_ignore = {
 
 " NERDTree "
 """"""""""""
-" Load NERDTree by default
-autocmd vimenter * NERDTree
+" Load NERDTree by default (unless it's a Git commit; see http://superuser.com/questions/554396/vim-prevent-nerdtree-opening-when-invoked-by-git)
+autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | endif
 
 " Close NERDTree if it's the last buffer left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
