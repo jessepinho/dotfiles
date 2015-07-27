@@ -6,7 +6,7 @@ autocmd BufWritePre * :%s/\s\+$//e " Strip trailing whitespace on save
 filetype plugin indent on " Enable filetype-specific indenting
 syntax on
 
-set background=dark
+set background=light
 set backspace=indent,eol,start " Backspace fix; see http://stackoverflow.com/a/5019353/974981
 set colorcolumn=81 " Highlight the 81st character of each line (to show where to wrap)
 set exrc " Enable per-directory .vimrc files
