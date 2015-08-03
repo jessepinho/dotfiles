@@ -23,6 +23,8 @@ set mouse=a
 set number
 set secure " Disable unsafe commands in per-directory .vimrc files
 set t_Co=256
+set splitright " Splits open to the right of the current buffer instead of to the left
+set splitbelow " Splits open below the current buffer instead of above
 
 " ctrlp "
 """""""""
