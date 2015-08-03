@@ -1,3 +1,6 @@
+# Use vim key bindings.
+set -o vi
+
 # Use git bash completion.
 source ~/.git-completion.bash
 
