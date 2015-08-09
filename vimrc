@@ -1,5 +1,4 @@
 execute pathogen#infect()
-execute pathogen#helptags()
 
 autocmd BufNewFile,BufRead *.md set filetype=markdown " Highlight Markdown properly (http://stackoverflow.com/a/23279293/974981)
 colorscheme solarized
