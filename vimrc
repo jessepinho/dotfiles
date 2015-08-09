@@ -51,4 +51,11 @@ let NERDTreeShowHidden=1 " Show hidden files
 """"""""""""""""
 let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
-let g:airline_section_b = ''
+let g:airline#extensions#default#section_truncate_width = {
+      \ 'a': 60,
+      \ 'b': 88,
+      \ }
+let g:airline#extensions#default#layout = [
+      \ [ 'c' ],
+      \ [ 'a', 'b', 'warning' ]
+      \ ]
