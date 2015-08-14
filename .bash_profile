@@ -8,6 +8,7 @@ export EDITOR=vim # Use vim as the default editor.
 export PATH="$HOME/.bin:/usr/local/bin:$PATH:$HOME/.node_modules/bin" # Make any node executables accessible
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
 export PATH="./node_modules/.bin:$PATH" # Make node executables in the current node project accessible
+export PATH="$PATH:/usr/local/share/python" # Make python executables accessible
 
 currentDirectory='\W' # Only show the current directory
 export PS1="${currentDirectory}$ " # Format the bash prompt
