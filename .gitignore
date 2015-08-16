@@ -1,0 +1,4 @@
+.DS_Store
+.gitignorable/*
+*.swo
+*.swp
