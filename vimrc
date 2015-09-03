@@ -6,7 +6,17 @@ autocmd BufWritePre * :%s/\s\+$//e " Strip trailing whitespace on save
 filetype plugin indent on " Enable filetype-specific indenting
 syntax on
 
-:map <C-L> :set background=light<CR> # Map Ctrl-L to setting the background to light
+" Use Ctrl-B to toggle the background between light/dark.
+if !exists("*ToggleBackground")
+  function ToggleBackground()
+    if &background == "light"
+      set background=dark
+    else
+      set background=light
+    endif
+  endfunction
+endif
+:map <C-B> :call ToggleBackground()<CR>
 
 set background=dark
 set backspace=indent,eol,start " Backspace fix; see http://stackoverflow.com/a/5019353/974981
