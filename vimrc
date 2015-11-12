@@ -58,6 +58,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let g:NERDTreeWinSize=29 " A width of 29 allows three columns to stack up in vim perfectly at a width of 81, with the last character highlighted to show that it's the boundary
 let NERDTreeIgnore=['\.swp$', '\.swo$'] " Ignore vim swapfiles
 let NERDTreeShowHidden=1 " Show hidden files
+let NERDTreeShowLineNumbers=1
 
 " vim-airline  "
 """"""""""""""""
