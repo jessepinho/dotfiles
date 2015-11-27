@@ -65,3 +65,12 @@ function setUpCodeDirectoryAliases {
 }
 
 setUpCodeDirectoryAliases
+
+function xc {
+  for file in ./*.{xcworkspace,xcodeproj}; do
+    if [ -e $file ]; then
+      open $file
+      break
+    fi
+  done
+}
