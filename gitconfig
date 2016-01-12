@@ -5,7 +5,10 @@
   ignorecase = true
   editor = /usr/bin/vim
   excludesfile = ~/.gitignore
-[color]
+[color "status"]
+  added = green
+  changed = red
+  untracked = cyan
 [alias]
   br = branch
   co = checkout
