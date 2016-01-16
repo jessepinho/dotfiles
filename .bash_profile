@@ -31,6 +31,7 @@ alias gpoh='git push origin head'
 alias gpohf='git push origin head --force'
 alias gpohu='git push origin head -u'
 alias ll='ls -alh'
+alias sbp='source ~/.bash_profile'
 
 # Allow Doge Git commands, like "such commit," or "very push." Because it's
 # important.
@@ -41,6 +42,12 @@ alias very='git'
 alias wow='git'
 
 ulimit -n 4096
+
+# Switch iTerm profile. Thanks to http://superuser.com/a/948104/286156
+iterm() {
+  local message="Changing iTerm profile to $1."
+  echo -e "$message\033]50;SetProfile=$1\a"
+}
 
 # Include a local .bash_profile, if it exists.
 if [ -f ~/.bash_profile_local ]; then
