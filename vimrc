@@ -18,6 +18,8 @@ if !exists("*ToggleBackground")
 endif
 :map <C-B> :call ToggleBackground()<CR>
 
+nmap <C-n> :NERDTreeToggle<CR>
+
 set background=dark
 set backspace=indent,eol,start " Backspace fix; see http://stackoverflow.com/a/5019353/974981
 set colorcolumn=81 " Highlight the 81st character of each line (to show where to wrap)
