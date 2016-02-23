@@ -32,6 +32,7 @@ alias gpohf='git push origin head --force'
 alias gpohu='git push origin head -u'
 alias ll='ls -alh'
 alias sbp='source ~/.bash_profile'
+alias simplehttpserver='python -m SimpleHTTPServer 8000'
 
 # Allow Doge Git commands, like "such commit," or "very push." Because it's
 # important.
