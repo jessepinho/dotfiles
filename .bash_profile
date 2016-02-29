@@ -23,6 +23,7 @@ source $(brew --prefix nvm)/nvm.sh
 
 alias be='bundle exec'
 alias dotfiles='cd ~/.dotfiles'
+alias g='git'
 alias gc='git commit'
 alias gcm='gc -m '
 alias gcp='gc && gpoh'
