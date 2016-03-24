@@ -15,6 +15,7 @@
   d = diff --color-words
   l  = !"git log --pretty=oneline --graph --abbrev-commit | head -n 10"
   st = status
+  ci = commit
 [color]
   ui = true
   diff = always
