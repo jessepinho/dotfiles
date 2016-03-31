@@ -47,7 +47,7 @@ set splitbelow " Splits open below the current buffer instead of above
 """""""""
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|sass\-cache)|node_modules|bower_components|tmp|_site$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn|sass\-cache)|node_modules|bower_components|tmp|_site|dist$',
   \ 'file': '\v.*\.(swp|swo)$',
   \ 'link': '',
   \ }
