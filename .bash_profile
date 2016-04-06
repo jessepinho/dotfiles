@@ -5,6 +5,7 @@ set -o vi
 source ~/.git-completion.bash
 
 export EDITOR=vim # Use vim as the default editor.
+export NODE_ENV=development
 export PATH="$HOME/.bin:/usr/local/bin:$PATH:$HOME/.node_modules/bin" # Make any node executables accessible
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
 export PATH="./node_modules/.bin:$PATH" # Make node executables in the current node project accessible
