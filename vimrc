@@ -43,6 +43,10 @@ set t_Co=256
 set splitright " Splits open to the right of the current buffer instead of to the left
 set splitbelow " Splits open below the current buffer instead of above
 
+" Syntastic "
+"""""""""""""
+let g:syntastic_typescript_checkers = [] " Typescript checkers are slooowwwww
+
 " ctrlp "
 """""""""
 let g:ctrlp_show_hidden = 1
