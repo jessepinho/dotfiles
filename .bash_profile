@@ -36,9 +36,6 @@ alias ll='ls -alh'
 alias sbp='source ~/.bash_profile'
 alias simplehttpserver='python -m SimpleHTTPServer 8000'
 
-# Prune merged branches. Thanks to http://stackoverflow.com/a/6127884/974981
-alias gpm='git branch --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d'
-
 # Allow Doge Git commands, like "such commit," or "very push." Because it's
 # important.
 alias many='git'
@@ -59,6 +56,16 @@ iterm() {
 if [ -f ~/.bash_profile_local ]; then
   source ~/.bash_profile_local
 fi
+
+# Prune merged branches. Thanks to http://stackoverflow.com/a/6127884/974981
+function gpm {
+  git branch --merged \
+    | grep -v "\*" \
+    | grep -v master \
+    | xargs -n 1 git branch -d
+
+  git remote prune origin
+}
 
 function setUpCodeDirectoryAliases {
   local file
