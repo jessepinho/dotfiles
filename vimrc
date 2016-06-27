@@ -79,7 +79,7 @@ let g:airline#extensions#default#section_truncate_width = {
       \ }
 let g:airline#extensions#default#layout = [
       \ [ 'c' ],
-      \ [ 'a', 'b', 'warning' ]
+      \ [ 'a', 'warning' ]
       \ ]
 
 " Switch between test and production code "
