@@ -37,6 +37,8 @@ alias gpohunv='git push origin head -u --no-verify'
 alias ll='ls -alh'
 alias sbp='source ~/.bash_profile'
 alias simplehttpserver='python -m SimpleHTTPServer 8000'
+alias vbp='vim ~/.bash_profile'
+alias vbpl='vim ~/.bash_profile_local'
 
 # Allow Doge Git commands, like "such commit," or "very push." Because it's
 # important.
