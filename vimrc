@@ -19,6 +19,7 @@ endif
 :map <C-B> :call ToggleBackground()<CR>
 
 nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-f> :NERDTreeFind<CR>
 
 let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Use skinny cursor in Insert mode
 let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Use block cursor for everything else
