@@ -83,6 +83,11 @@ let g:airline#extensions#default#layout = [
       \ [ 'a', 'warning' ]
       \ ]
 
+" UltiSnips "
+"""""""""""""
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+
 " Switch between test and production code "
 """""""""""""""""""""""""""""""""""""""""""
 function! OpenTestAlternate()
