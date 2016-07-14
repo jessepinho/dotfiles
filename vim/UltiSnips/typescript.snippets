@@ -4,15 +4,15 @@ import { Component, Inject } from '@angular/core';
 const template = require('./${1:template}.ng2.html');
 
 @Component({
-	selector: 'mc-$1-container',
-	template,
+  selector: 'mc-$1-container',
+  template,
 })
 export class ${2:ContainerName}Container {
   private unsubscribe: Function;
 
   constructor(
     @Inject('connect') private connect
-	) {}
+  ) {}
 
   mapStateToProps(state: IAppState) {
     return {};
@@ -33,4 +33,24 @@ export class ${2:ContainerName}Container {
     this.unsubscribe();
   }
 }
+endsnippet
+
+snippet red "An Angular reducer" b
+import { combineReducers } from 'redux';
+
+import {
+} from '../actions/types';
+
+const ${1:reducerName} = (state = {}, action) => {
+  return state;
+};
+
+export const ${2:filename} = combineReducers({
+  $1,
+});
+endsnippet
+
+snippet tsld "tslint:disable" b
+// tslint:disable:${1:rule}
+// tslint:enable:$1
 endsnippet
