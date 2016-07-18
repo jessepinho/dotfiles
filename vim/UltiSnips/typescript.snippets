@@ -4,34 +4,34 @@ import { Component, Inject } from '@angular/core';
 const template = require('./${1:template}.ng2.html');
 
 @Component({
-  selector: 'mc-$1-container',
-  template,
+	selector: 'mc-$1-container',
+	template,
 })
 export class ${2:ContainerName}Container {
-  private unsubscribe: Function;
+	private unsubscribe: Function;
 
-  constructor(
-    @Inject('connect') private connect
-  ) {}
+	constructor(
+		@Inject('connect') private connect
+	) {}
 
-  mapStateToProps(state: IAppState) {
-    return {};
-  }
+	mapStateToProps(state: IAppState) {
+		return {};
+	}
 
-  mapDispatchToProps(dispatch) {
-    return {};
-  }
+	mapDispatchToProps(dispatch) {
+		return {};
+	}
 
-  ngOnInit() {
-    this.unsubscribe = this.connect(
-      this.mapStateToProps.bind(this),
-      this.mapDispatchToProps.bind(this)
-    )(this);
-  }
+	ngOnInit() {
+		this.unsubscribe = this.connect(
+			this.mapStateToProps.bind(this),
+			this.mapDispatchToProps.bind(this)
+		)(this);
+	}
 
-  ngOnDestroy() {
-    this.unsubscribe();
-  }
+	ngOnDestroy() {
+		this.unsubscribe();
+	}
 }
 endsnippet
 
@@ -42,15 +42,27 @@ import {
 } from '../actions/types';
 
 const ${1:reducerName} = (state = {}, action) => {
-  return state;
+	return state;
 };
 
 export const ${2:filename} = combineReducers({
-  $1,
+	$1,
 });
 endsnippet
 
 snippet tsld "tslint:disable" b
 // tslint:disable:${1:rule}
 // tslint:enable:$1
+endsnippet
+
+snippet svc "Angular service" b
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { Api } from '../../base/services/api';
+
+@Injectable()
+export class ${1:ServiceName}Service {
+	constructor(private api: Api) {}
+}
 endsnippet
