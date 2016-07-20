@@ -1,4 +1,4 @@
-snippet cont "An Angular container" b
+snippet cont "Angular container" b
 import { Component, Inject } from '@angular/core';
 
 const template = require('./${1:template}.ng2.html');
@@ -35,7 +35,7 @@ export class ${2:ContainerName}Container {
 }
 endsnippet
 
-snippet red "An Angular reducer" b
+snippet red "Angular reducer" b
 import { combineReducers } from 'redux';
 
 import {
@@ -55,6 +55,11 @@ snippet tsld "tslint:disable" b
 // tslint:enable:$1
 endsnippet
 
+snippet tsldv "tslint:disable:no-unused-variable" b
+// tslint:disable:no-unused-variable
+// tslint:enable:no-unused-variable
+endsnippet
+
 snippet svc "Angular service" b
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -64,5 +69,29 @@ import { Api } from '../../base/services/api';
 @Injectable()
 export class ${1:ServiceName}Service {
 	constructor(private api: Api) {}
+}
+endsnippet
+
+snippet act "Angular action" b
+import { Injectable } from '@angular/core';
+
+import {
+} from './types';
+
+@Injectable()
+export class ${1:ActionName}Actions {
+}
+endsnippet
+
+snippet comp "Angular component" b
+import { Component } from '@angular/core';
+
+const template = require('./${1:template}.ng2.html');
+
+@Component({
+	selector: 'mc-$1',
+	template,
+})
+export class ${2:ComponentName} {
 }
 endsnippet
