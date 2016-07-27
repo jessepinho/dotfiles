@@ -1,13 +1,17 @@
 snippet cont "Angular container" b
 import { Component, Inject } from '@angular/core';
 
-const template = require('./${1:template}.ng2.html');
+import { ${1:ComponentName} } from '../../components/${2:component-name}';
+const template = require('./$2.ng2.html');
 
 @Component({
-	selector: 'mc-$1-container',
+	selector: 'mc-$2-container',
 	template,
+	directives: [
+		$1,
+	],
 })
-export class ${2:ContainerName}Container {
+export class $1Container {
 	private unsubscribe: Function;
 
 	constructor(
