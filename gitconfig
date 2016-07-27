@@ -3,7 +3,6 @@
   email = jesse@jessepinho.com
 [core]
   ignorecase = true
-  editor = /usr/bin/vim
   excludesfile = ~/.gitignore
 [color "status"]
   added = green
