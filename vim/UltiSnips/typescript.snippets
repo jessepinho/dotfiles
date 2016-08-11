@@ -74,6 +74,59 @@ export class ${1:ServiceName}Service {
 }
 endsnippet
 
+snippet svcspec "Angular service spec" b
+import { provide, Injector } from '@angular/core';
+
+import {
+	inject,
+	beforeEach,
+	beforeEachProviders,
+} from '@angular/core/testing';
+
+import { Api } from '../../base/services/api';
+import { getRequestEndpoint, getRequestParams } from '../../base/spec-helpers';
+import { ${1:ServiceName}Service } from './${2:filename}';
+
+import { Observable } from 'rxjs';
+
+describe('$1Service', () => {
+	let api;
+	let service: $1Service;
+
+	beforeEachProviders(() => [
+			provide(Api, {
+				useFactory: () => ({
+					get: jasmine.createSpy('http:get'),
+					post: jasmine.createSpy('http:post'),
+					put: jasmine.createSpy('http:put'),
+				}),
+			}),
+			$1Service,
+		]
+	);
+
+	beforeEach(inject([Injector], injector => {
+		api = injector.get(Api);
+		service = injector.get($1Service);
+	}));
+
+	describe('${3:methodName}', () => {
+		beforeEach(() => {
+			api.get.and.returnValue(Observable.of({
+				json: () => 'result',
+			}));
+		});
+
+		it('hits the correct endpoint', () => {
+			service.$3();
+			const endpoint = getRequestEndpoint(api, 'get');
+
+			expect(endpoint).toEqual('${4:endpoint}');
+		});
+	});
+});
+endsnippet
+
 snippet act "Angular action" b
 import { Injectable } from '@angular/core';
 
@@ -86,7 +139,7 @@ export class ${1:ActionName}Actions {
 endsnippet
 
 snippet comp "Angular component" b
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 const template = require('./${1:template}.ng2.html');
 
