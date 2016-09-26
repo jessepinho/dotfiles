@@ -150,3 +150,15 @@ const template = require('./${1:template}.ng2.html');
 export class ${2:ComponentName} {
 }
 endsnippet
+
+snippet desc "describe" b
+describe('${1:feature}', () => {
+	${2:...}
+});
+endsnippet
+
+snippet it "'it' example" b
+it('${1:does something}', () => {
+	${2:...}
+});
+endsnippet
