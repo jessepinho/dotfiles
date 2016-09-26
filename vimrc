@@ -104,4 +104,3 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " tsuquyomi "
 """""""""""""
 let g:tsuquyomi_single_quote_import=1
-:map <C-j> :TsuDefinition<CR>
