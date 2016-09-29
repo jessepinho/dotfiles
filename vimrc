@@ -63,7 +63,7 @@ let g:ctrlp_custom_ignore = {
 autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | endif
 
 " Close NERDTree if it's the last buffer left
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 let g:NERDTreeWinSize=29 " A width of 29 allows three columns to stack up in vim perfectly at a width of 81, with the last character highlighted to show that it's the boundary
 let NERDTreeIgnore=['\.swp$', '\.swo$'] " Ignore vim swapfiles
