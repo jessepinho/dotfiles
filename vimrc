@@ -27,6 +27,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Use block cursor for everything else
 set background=light
 set backspace=indent,eol,start " Backspace fix; see http://stackoverflow.com/a/5019353/974981
 set colorcolumn=81 " Highlight the 81st character of each line (to show where to wrap)
+set dir=/var/tmp " Put swapfiles in /var/tmp
 set exrc " Enable per-directory .vimrc files
 set laststatus=2 " Always show the status line
 set expandtab
