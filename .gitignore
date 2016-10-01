@@ -1,4 +1,5 @@
 .DS_Store
 .gitignorable/*
+npm-debug.log
 *.swo
 *.swp
