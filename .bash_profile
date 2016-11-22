@@ -14,6 +14,7 @@ export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
 export PATH="./node_modules/.bin:$PATH" # Make node executables in the current node project accessible
 export PS1="\W$ " # Format the bash prompt to only show the current directory
 export PS2="> " # Format the continuation interactive prompt
+export RAILS_ENV=development
 export VISUAL="$EDITOR"
 
 # Set up NVM.
