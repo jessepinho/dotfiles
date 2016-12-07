@@ -82,7 +82,7 @@ let g:airline#extensions#default#section_truncate_width = {
       \ }
 let g:airline#extensions#default#layout = [
       \ [ 'c' ],
-      \ [ 'a', 'warning' ]
+      \ [ 'a', 'z', 'warning' ]
       \ ]
 
 " UltiSnips "
