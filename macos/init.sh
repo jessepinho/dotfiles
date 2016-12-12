@@ -35,3 +35,6 @@ defaults write -g KeyRepeat -int 2
 
 # Require password immediately after sleep or screensaver begins
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Show the percentage in the battery menu item
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
