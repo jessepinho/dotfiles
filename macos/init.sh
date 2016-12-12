@@ -39,5 +39,8 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Show the percentage in the battery menu item
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
-# Install the open-iterm Automator workflow
-open macos/open-iterm.workflow
+# Use Cmd + Shift + ~ keyboard shortcut for showing/hiding iTerm.
+defaults write com.googlecode.iterm2 Hotkey -bool true
+defaults write com.googlecode.iterm2 HotkeyChar -int 126
+defaults write com.googlecode.iterm2 HotkeyCode -int 50
+defaults write com.googlecode.iterm2 HotkeyModifiers -int 1179914
