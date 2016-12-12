@@ -38,3 +38,6 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Show the percentage in the battery menu item
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+# Install the open-iterm Automator workflow
+open macos/open-iterm.workflow
