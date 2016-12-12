@@ -28,3 +28,7 @@ defaults write com.apple.dock minimize-to-application -bool true
 
 # Start SizeUp app at login
 defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
+
+# Make key repeat faster
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2
