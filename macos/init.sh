@@ -14,6 +14,12 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 
+# Use scroll gesture with the Ctrl (^) modifier key to zoom
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+
+# When zoomed in, the screen image moves continuously with pointer
+defaults write ~/Library/Preferences/com.apple.universalaccess.plist closeViewPanningMode -int 0
+
 # Minimize windows using scale effect
 defaults write com.apple.dock mineffect scale
 
