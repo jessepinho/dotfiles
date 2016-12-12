@@ -1,9 +1,7 @@
 ack
-caskroom/cask/brew-cask
 cowsay
 git
 hub
 nvm
 speedtest_cli
 tmate
-vim
