@@ -32,3 +32,6 @@ defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 # Make key repeat faster
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
+
+# Require password immediately after sleep or screensaver begins
+defaults write com.apple.screensaver askForPasswordDelay -int 0
