@@ -1,7 +1,6 @@
 execute pathogen#infect()
 
 autocmd BufNewFile,BufRead *.md set filetype=markdown " Highlight Markdown properly (http://stackoverflow.com/a/23279293/974981)
-colorscheme solarized
 autocmd BufWritePre * :%s/\s\+$//e " Strip trailing whitespace on save
 filetype plugin indent on " Enable filetype-specific indenting
 syntax on
@@ -106,3 +105,10 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " tsuquyomi "
 """""""""""""
 let g:tsuquyomi_single_quote_import=1
+
+" vim-colors-solarized "
+""""""""""""""""""""""""
+" Fix color scheme issues. See
+" https://github.com/altercation/vim-colors-solarized/tree/528a59f26d12278698bb946f8fb82a63711eec21#important-note-for-terminal-users
+let g:solarized_termcolors=256
+colorscheme solarized
