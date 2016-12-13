@@ -26,6 +26,9 @@ defaults write com.apple.dock mineffect scale
 # Minimize windows into application icon
 defaults write com.apple.dock minimize-to-application -bool true
 
+# Auto-hide the dock
+defaults write com.apple.dock autohide -bool true
+
 # Start SizeUp app at login
 defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 
