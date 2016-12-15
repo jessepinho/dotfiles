@@ -6,6 +6,9 @@
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
+# Use 24-hour time
+defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
+
 # Enable tap-to-click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
