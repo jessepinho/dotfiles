@@ -1,5 +1,6 @@
 anki
 dropbox
+evernote
 google-chrome
 iterm2
 macvim
