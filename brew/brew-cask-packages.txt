@@ -1,4 +1,5 @@
 anki
+dropbox
 google-chrome
 iterm2
 macvim
