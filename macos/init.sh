@@ -52,5 +52,5 @@ defaults write com.googlecode.iterm2 HotkeyCode -int 50
 defaults write com.googlecode.iterm2 HotkeyModifiers -int 1179914
 
 # Customize the icons in the Touch Bar
-defaults write com.apple.controlstrip MiniCustomized '( "com.apple.system.brightness", "com.apple.system.volume", "com.apple.system.mute", "com.apple.system.screen-lock" )'
+defaults write com.apple.controlstrip MiniCustomized '( "com.apple.system.screen-lock", "com.apple.system.volume", "com.apple.system.mute", "com.apple.system.dashboard" )'
 defaults write com.apple.controlstrip FullCustomized '( "com.apple.system.group.brightness", "com.apple.system.mission-control", "com.apple.system.dashboard", "com.apple.system.group.keyboard-brightness", "com.apple.system.group.media", "com.apple.system.group.volume", "com.apple.system.screen-lock" )'
