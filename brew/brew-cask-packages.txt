@@ -1,3 +1,4 @@
+adobe-creative-cloud
 anki
 dropbox
 evernote
