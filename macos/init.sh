@@ -9,6 +9,9 @@ osascript -e 'tell application "System Preferences" to quit'
 # Use 24-hour time
 defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
 
+# Format the menu bar clock: "Sun Jan 1 13:00"
+defaults write com.apple.menuextra.clock DateFormat "EEE MMM d H:mm"
+
 # Enable tap-to-click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
