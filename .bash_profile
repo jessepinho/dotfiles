@@ -4,12 +4,8 @@ set -o vi
 # Use git bash completion.
 source ~/.git-completion.bash
 
-# Load RVM into a shell session *as a function*.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 export EDITOR=/usr/local/bin/vim # Use vim as the default editor.
 export NODE_ENV=development
-export PATH="$HOME/.bin:/usr/local/bin:$PATH:$HOME/.node_modules/bin" # Make any node executables accessible
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
 export PATH="./node_modules/.bin:$PATH" # Make node executables in the current node project accessible
 export PS1="\W$ " # Format the bash prompt to only show the current directory
@@ -20,6 +16,9 @@ export VISUAL="$EDITOR"
 # Set up NVM.
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# Load RVM into a shell session *as a function*.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 alias be='bundle exec'
 alias dotfiles='cd ~/.dotfiles'
