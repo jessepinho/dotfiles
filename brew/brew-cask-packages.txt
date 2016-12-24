@@ -6,5 +6,6 @@ google-chrome
 iterm2
 macvim
 sizeup
+skyfonts
 telegram
 whatsapp
