@@ -17,6 +17,18 @@ if !exists("*ToggleBackground")
 endif
 :map <C-B> :call ToggleBackground()<CR>
 
+" Use Ctrl-Shift-L to toggle relative vs. absolute line numbers
+if !exists("*ToggleRelativeNumber")
+  function ToggleRelativeNumber()
+    if &relativenumber == 1
+      set norelativenumber
+    else
+      set relativenumber
+    endif
+  endfunction
+endif
+:map <C-S-L> :call ToggleRelativeNumber()<CR>
+
 let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Use skinny cursor in Insert mode
 let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Use block cursor for everything else
 
@@ -34,7 +46,8 @@ set tabstop=2
 set shiftwidth=2
 set autoindent
 set mouse=a
-set number
+set number " Show line numbers
+set relativenumber " Use relative line numbers
 set secure " Disable unsafe commands in per-directory .vimrc files
 set t_Co=256
 set splitright " Splits open to the right of the current buffer instead of to the left
