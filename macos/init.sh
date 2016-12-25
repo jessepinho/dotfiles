@@ -2,6 +2,16 @@
 
 # Inspiration: https://mths.be/macos
 
+# # Evernote
+# ## Preferences
+# ### General
+# Open Evernote when I log into my computer - DISABLE
+defaults write com.evernote.Evernote runAtLogin -bool false
+# Keep Evernote Helper running in the background when I quit Evernote
+defaults write com.evernote.Evernote runHelperWithoutMainApp -bool false
+# Start the Evernote Helper when I log into my computer - DISABLE
+defaults write com.evernote.Evernote runHelperAtLogin -bool false
+
 # # iTerm2
 # Use Cmd + Shift + ~ keyboard shortcut for showing/hiding iTerm.
 defaults write com.googlecode.iterm2 Hotkey -bool true
