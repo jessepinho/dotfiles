@@ -1,6 +1,7 @@
 ack
 cowsay
 git
+highlight
 hub
 nvm
 speedtest_cli
