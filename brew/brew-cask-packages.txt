@@ -8,5 +8,6 @@ iterm2
 macvim
 sizeup
 skyfonts
+slack
 telegram
 whatsapp
