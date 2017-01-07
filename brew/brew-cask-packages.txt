@@ -1,5 +1,6 @@
 adobe-creative-cloud
 anki
+appcleaner
 dropbox
 evernote
 google-chrome
@@ -9,5 +10,6 @@ macvim
 sizeup
 skyfonts
 slack
+spotify
 telegram
 whatsapp
