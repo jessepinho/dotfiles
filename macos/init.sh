@@ -12,6 +12,10 @@ defaults write com.evernote.Evernote runHelperWithoutMainApp -bool false
 # Start the Evernote Helper when I log into my computer - DISABLE
 defaults write com.evernote.Evernote runHelperAtLogin -bool false
 
+# # Finder
+# View > Show Status Bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
 # # iTerm2
 # Use Cmd + Shift + ~ keyboard shortcut for showing/hiding iTerm.
 defaults write com.googlecode.iterm2 Hotkey -bool true
