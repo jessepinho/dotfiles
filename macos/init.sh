@@ -38,6 +38,8 @@ defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/Displays.menu" \
 	"/System/Library/CoreServices/Menu Extras/User.menu" \
 	"/System/Library/CoreServices/Menu Extras/Volume.menu"
+# Only show the dock after a 2-second delay (to make sure I mean it)
+defaults write com.apple.dock autohide-delay -float 2
 
 # # SizeUp
 # Start SizeUp at login
