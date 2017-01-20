@@ -1,4 +1,5 @@
 ack
+autossh
 cowsay
 git
 highlight

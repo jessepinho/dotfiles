@@ -2,6 +2,7 @@ adobe-creative-cloud
 anki
 appcleaner
 dropbox
+duet
 evernote
 google-chrome
 hipchat
