@@ -1,6 +1,7 @@
 adobe-creative-cloud
 anki
 appcleaner
+docker
 dropbox
 duet
 evernote
