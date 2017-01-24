@@ -8,6 +8,7 @@ google-chrome
 hipchat
 iterm2
 macvim
+sequel-pro
 sizeup
 skyfonts
 slack
