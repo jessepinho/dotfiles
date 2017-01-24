@@ -24,6 +24,8 @@ defaults write com.googlecode.iterm2 HotkeyCode -int 50
 defaults write com.googlecode.iterm2 HotkeyModifiers -int 1179914
 
 # # Misc
+# Show all files (including dotfiles)
+defaults write com.apple.finder AppleShowAllFiles YES
 # Show the percentage in the battery menu item
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 # Customize the icons in the Touch Bar
