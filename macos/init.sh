@@ -2,6 +2,9 @@
 
 # Inspiration: https://mths.be/macos
 
+# Keep-alive: update existing `sudo` time stamp until this script has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 # # Evernote
 # ## Preferences
 # ### General
@@ -17,13 +20,16 @@ defaults write com.evernote.Evernote runHelperAtLogin -bool false
 defaults write com.apple.finder ShowStatusBar -bool true
 
 # # iTerm2
-# Use Cmd + Shift + ~ keyboard shortcut for showing/hiding iTerm.
+# Use Cmd + Shift + ~ keyboard shortcut for showing/hiding iTerm
 defaults write com.googlecode.iterm2 Hotkey -bool true
 defaults write com.googlecode.iterm2 HotkeyChar -int 126
 defaults write com.googlecode.iterm2 HotkeyCode -int 50
 defaults write com.googlecode.iterm2 HotkeyModifiers -int 1179914
 
 # # Misc
+# Don't auto-connect with Bluetooth devices
+# Found at http://apple.stackexchange.com/a/226169/66224
+sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist DontPageAudioDevices 1
 # Show all files (including dotfiles)
 defaults write com.apple.finder AppleShowAllFiles YES
 # Show the percentage in the battery menu item
