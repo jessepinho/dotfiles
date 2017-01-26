@@ -83,6 +83,8 @@ defaults write -g InitialKeyRepeat -int 15
 # ## Language & Region
 # Time format: 24-Hour Time
 defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
+# Temperature: Celsius
+defaults write ~/Library/Preferences/.GlobalPreferences AppleTemperatureUnit Celsius
 # ## Security & Privacy
 # ### General
 # Require password immediately after sleep or screen saver begins

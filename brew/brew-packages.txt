@@ -4,6 +4,7 @@ cowsay
 git
 highlight
 hub
+mysql
 nvm
 speedtest_cli
 tmate
