@@ -168,3 +168,7 @@ it('${1:does something}', () => {
 	${2:...}
 });
 endsnippet
+
+snippet injt "inject translate"
+@Inject(Translator) @translates('${1:root key}') private t: ITranslator
+endsnippet
