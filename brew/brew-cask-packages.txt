@@ -16,3 +16,4 @@ slack
 spotify
 telegram
 whatsapp
+zoomus
