@@ -8,3 +8,4 @@ mysql
 nvm
 speedtest_cli
 tmate
+yarn
