@@ -8,6 +8,7 @@ evernote
 google-chrome
 hipchat
 iterm2
+licecap
 macvim
 sequel-pro
 sizeup
