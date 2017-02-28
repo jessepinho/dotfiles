@@ -81,53 +81,33 @@ export class ${1:ServiceName}Service {
 endsnippet
 
 snippet svcspec "Angular service spec" b
-import { provide, Injector } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
+import { Api } from '../../base/services/api.mock';
 import {
-	inject,
-	beforeEach,
-	beforeEachProviders,
-} from '@angular/core/testing';
-
-import { Api } from '../../base/services/api';
-import { getRequestEndpoint, getRequestParams } from '../../base/spec-helpers';
+	getRequestEndpoint,
+	getRequestParams,
+	getRequestSearch,
+	mockRequest,
+} from '../../base/spec-helpers';
 import { ${1:ServiceName}Service } from './${2:filename}';
-
-import { Observable } from 'rxjs';
 
 describe('$1Service', () => {
 	let api;
 	let service: $1Service;
 
-	beforeEachProviders(() => [
-			provide(Api, {
-				useFactory: () => ({
-					get: jasmine.createSpy('http:get'),
-					post: jasmine.createSpy('http:post'),
-					put: jasmine.createSpy('http:put'),
-				}),
-			}),
-			$1Service,
-		]
-	);
-
-	beforeEach(inject([Injector], injector => {
-		api = injector.get(Api);
-		service = injector.get($1Service);
-	}));
+	beforeEach(() => {
+		api = new Api();
+		service = new $1Service(api);
+	});
 
 	describe('${3:methodName}', () => {
-		beforeEach(() => {
-			api.get.and.returnValue(Observable.of({
-				json: () => 'result',
-			}));
-		});
+		beforeEach(() => mockRequest(api.get));
 
 		it('hits the correct endpoint', () => {
 			service.$3();
-			const endpoint = getRequestEndpoint(api, 'get');
 
-			expect(endpoint).toEqual('${4:endpoint}');
+			expect(getRequestEndpoint(api, 'get')).toEqual('${4:endpoint}');
 		});
 	});
 });
@@ -159,13 +139,11 @@ endsnippet
 
 snippet desc "describe" b
 describe('${1:feature}', () => {
-	${2:...}
 });
 endsnippet
 
 snippet it "'it' example" b
 it('${1:does something}', () => {
-	${2:...}
 });
 endsnippet
 
