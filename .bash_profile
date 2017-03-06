@@ -88,6 +88,25 @@ function setUpCodeDirectoryAliases {
 
 setUpCodeDirectoryAliases
 
+function setUpWorkDirectoryAliases {
+  local file
+  # Iterate over all files in ~/Code
+  for file in ~/Code/work/*; do
+    # Filter for just directories
+    if [ -d $file ]; then
+      # Get the directory name without the full path
+      local aliasName=$(basename $file)
+      # Make sure the directory's name isn't already a command in bash
+      if ! command -v $aliasName >/dev/null 2>&1; then
+        # Create an alias named after the directory that cd's into it
+        alias $aliasName="cd $file"
+      fi
+    fi
+  done
+}
+
+setUpWorkDirectoryAliases
+
 function xc {
   for file in ./*.{xcworkspace,xcodeproj}; do
     if [ -e $file ]; then
