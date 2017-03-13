@@ -17,3 +17,5 @@ brew install vim --with-lua --force
 brew tap caskroom/cask
 brew install caskroom/cask/brew-cask
 brew cask install $(cat brew/brew-cask-packages.txt)
+
+echo "Install these manually: Amphetamine"
