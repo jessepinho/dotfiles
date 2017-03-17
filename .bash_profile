@@ -22,6 +22,7 @@ source $(brew --prefix nvm)/nvm.sh
 
 alias be='bundle exec'
 alias dotfiles='cd ~/.dotfiles'
+alias dr80='docker run -p 80:80'
 alias g='git'
 alias gc='git commit'
 alias gcm='gc -m '
