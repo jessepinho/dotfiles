@@ -86,6 +86,10 @@ defaults write com.apple.dock autohide -bool true
 defaults write -g KeyRepeat -int 2
 # Delay Until Repeat
 defaults write -g InitialKeyRepeat -int 15
+# ### Shortcuts
+# Full Keyboard Access: All controls
+# (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # ## Language & Region
 # Time format: 24-Hour Time
 defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
