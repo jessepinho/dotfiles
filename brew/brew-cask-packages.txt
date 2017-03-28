@@ -10,6 +10,7 @@ hipchat
 iterm2
 licecap
 macvim
+private-internet-access
 sequel-pro
 sizeup
 skyfonts
