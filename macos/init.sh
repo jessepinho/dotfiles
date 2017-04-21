@@ -95,6 +95,9 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
 # Temperature: Celsius
 defaults write ~/Library/Preferences/.GlobalPreferences AppleTemperatureUnit Celsius
+# ## Mouse
+# Secondary click
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
 # ## Security & Privacy
 # ### General
 # Require password immediately after sleep or screen saver begins
