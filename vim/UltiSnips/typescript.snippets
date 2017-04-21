@@ -1,7 +1,7 @@
 snippet cont "Angular container" b
 import { Component, Inject } from '@angular/core';
 
-import { ${1:ComponentName} } from '../../components/${2:component-name}';
+import { ${1:ComponentName} } from '../../components/${2:component-name}/$2';
 const template = require('./$2.ng2.html');
 
 @Component({
