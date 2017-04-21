@@ -49,6 +49,10 @@ alias wow='git'
 
 ulimit -n 4096
 
+checkPort() {
+  lsof -i tcp:$1
+}
+
 # Switch iTerm profile. Thanks to http://superuser.com/a/948104/286156
 iterm() {
   local message="Changing iTerm profile to $1."
