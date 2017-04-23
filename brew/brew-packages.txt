@@ -2,6 +2,7 @@ ack
 autossh
 cowsay
 git
+heroku
 highlight
 hub
 mysql
