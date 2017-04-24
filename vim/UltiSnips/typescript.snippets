@@ -36,8 +36,7 @@ endsnippet
 snippet red "Angular reducer" b
 import { combineReducers } from 'redux';
 
-import {
-} from '../actions/types';
+import * as types from '../actions/types';
 
 const ${1:reducerName} = (state = {}, action) => {
 	return state;
@@ -112,8 +111,7 @@ endsnippet
 snippet act "Angular action" b
 import { Injectable } from '@angular/core';
 
-import {
-} from './types';
+import * as types from './types';
 
 @Injectable()
 export class ${1:ActionName}Actions {
