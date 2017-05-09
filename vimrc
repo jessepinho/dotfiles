@@ -47,7 +47,6 @@ set shiftwidth=2
 set autoindent
 set mouse=a
 set number " Show line numbers
-set relativenumber " Use relative line numbers
 set secure " Disable unsafe commands in per-directory .vimrc files
 set t_Co=256
 set splitright " Splits open to the right of the current buffer instead of to the left
