@@ -17,6 +17,7 @@ skyfonts
 slack
 spotify
 telegram
+visual-studio-code
 vlc
 whatsapp
 zoomus
