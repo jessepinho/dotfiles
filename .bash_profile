@@ -23,6 +23,8 @@ source $(brew --prefix nvm)/nvm.sh
 alias be='bundle exec'
 alias dotfiles='cd ~/.dotfiles'
 alias dr80='docker run -p 80:80'
+# https://remysharp.com/2017/05/29/getting-free-wifi
+alias freewifi="sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`"
 alias g='git'
 alias gc='git commit'
 alias gcm='gc -m '
