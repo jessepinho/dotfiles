@@ -49,6 +49,7 @@ defaults write com.apple.systemuiserver menuExtras -array \
 # Only show the dock after a 2-second delay (to make sure I mean it)
 defaults write com.apple.dock autohide-delay -float 2
 # Disable the dashboard
+# https://www.howtogeek.com/tips/how-to-disable-the-useless-dashboard-on-mac-os-x/
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 
 # # SizeUp
