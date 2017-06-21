@@ -57,6 +57,8 @@ defaults write com.apple.dock autohide-delay -float 2
 # Disable the dashboard
 # https://www.howtogeek.com/tips/how-to-disable-the-useless-dashboard-on-mac-os-x/
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
+# Disable the character accent menu
+defaults write -g ApplePressAndHoldEnabled -bool false
 
 # # SizeUp
 # Start SizeUp at login
