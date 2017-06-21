@@ -5,6 +5,7 @@ git
 heroku
 highlight
 hub
+memcached
 mysql
 nvm
 speedtest_cli
