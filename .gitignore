@@ -1,5 +1,6 @@
 .DS_Store
 .gitignorable/*
+.vscode/*
 npm-debug.log
 *.swo
 *.swp
