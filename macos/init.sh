@@ -10,6 +10,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # ### General
 # Show: 24 hours at a time
 defaults write com.apple.iCal "number of hours displayed" 24
+# ### Advanced
+# Turn on time zone support
+defaults write com.apple.iCal "TimeZone support enabled" -bool true
 
 # # Evernote
 # ## Preferences
