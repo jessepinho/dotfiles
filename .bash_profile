@@ -7,6 +7,7 @@ source ~/.git-completion.bash
 export EDITOR=/usr/local/bin/vim # Use vim as the default editor.
 export NODE_ENV=development
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
+export PATH="~/Library/Python/2.7/bin:$PATH" # Add pip executables to the path
 export PATH="./node_modules/.bin:$PATH" # Make node executables in the current node project accessible
 export PS1="\W$ " # Format the bash prompt to only show the current directory
 export PS2="> " # Format the continuation interactive prompt

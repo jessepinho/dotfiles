@@ -5,6 +5,7 @@ git
 heroku
 highlight
 hub
+jq
 memcached
 mysql
 nvm
