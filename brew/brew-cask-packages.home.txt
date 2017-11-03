@@ -1,0 +1,8 @@
+adobe-creative-cloud
+anki
+evernote
+private-internet-access
+spotify
+telegram
+vlc
+whatsapp

@@ -18,4 +18,10 @@ brew tap caskroom/cask
 brew install caskroom/cask/brew-cask
 brew cask install $(cat brew/brew-cask-packages.txt)
 
+# Install packages for home computer if HOME env variable is set
+if [ -z ${HOME+x} ]; then
+  brew install $(cat brew/brew-packages.home.txt)
+  brew cask install $(cat brew/brew-cask-packages.home.txt)
+fi
+
 echo "Install these manually: Amphetamine"
