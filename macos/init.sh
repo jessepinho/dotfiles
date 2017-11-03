@@ -28,13 +28,6 @@ defaults write com.evernote.Evernote runHelperAtLogin -bool false
 # View > Show Status Bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
-# # iTerm2
-# Use Cmd + Shift + ~ keyboard shortcut for showing/hiding iTerm
-defaults write com.googlecode.iterm2 Hotkey -bool true
-defaults write com.googlecode.iterm2 HotkeyChar -int 126
-defaults write com.googlecode.iterm2 HotkeyCode -int 50
-defaults write com.googlecode.iterm2 HotkeyModifiers -int 1179914
-
 # # Misc
 # Don't auto-connect with Bluetooth devices
 # Found at http://apple.stackexchange.com/a/226169/66224
