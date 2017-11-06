@@ -24,4 +24,9 @@ if [ -z ${HOME+x} ]; then
   brew cask install $(cat brew/brew-cask-packages.home.txt)
 fi
 
+# Install packages for work computer if WORK env variable is set
+if ! [ -z ${WORK+x} ]; then
+  brew cask install $(cat brew/brew-cask-packages.work.txt)
+fi
+
 echo "Install these manually: Amphetamine"
