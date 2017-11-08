@@ -1,4 +1,3 @@
-adobe-creative-cloud
 anki
 evernote
 private-internet-access
