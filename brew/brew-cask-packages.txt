@@ -11,5 +11,6 @@ sizeup
 skyfonts
 skype
 slack
+the-unarchiver
 visual-studio-code
 zoomus
