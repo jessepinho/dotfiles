@@ -25,6 +25,19 @@ defaults write com.evernote.Evernote runHelperWithoutMainApp -bool false
 defaults write com.evernote.Evernote runHelperAtLogin -bool false
 
 # # Finder
+# ## Preferences
+# ### General
+# New Finder windows show: jessepinho (home directory)
+# Other options:
+# Computer     : `PfCm`
+# Volume       : `PfVo`
+# $HOME        : `PfHm`
+# Desktop      : `PfDe`
+# Documents    : `PfDo`
+# All My Files : `PfAF`
+# Other…       : `PfLo`
+# See https://github.com/joeyhoer/starter/blob/516f5c66dbc0a7d0c8a092d38c794edf45ca92cd/apps/finder.sh#L136-L144
+defaults write com.apple.finder NewWindowTarget -string 'PfHm'
 # View > Show Status Bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
