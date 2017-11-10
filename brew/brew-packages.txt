@@ -1,5 +1,6 @@
 ack
 autossh
+awscli
 cowsay
 git
 highlight
