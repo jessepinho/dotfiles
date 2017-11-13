@@ -69,6 +69,12 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 # Disable the character accent menu
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+# # Safari
+# ## Preferences
+# ### Advanced
+# Show Develop menu in menu bar
+defaults write com.apple.safari IncludeDevelopMenu -bool true
+
 # # SizeUp
 # Start SizeUp at login
 defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
