@@ -21,6 +21,7 @@ source $(brew --prefix nvm)/nvm.sh
 # Load RVM into a shell session *as a function*.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+alias android-emulator='~/Library/Android/sdk/tools/emulator -avd pixel2 &'
 alias be='bundle exec'
 alias dotfiles='cd ~/.dotfiles'
 alias dr80='docker run -p 80:80'
