@@ -117,6 +117,7 @@ function setUpWorkDirectoryAliases {
 
 setUpWorkDirectoryAliases
 
+# Open XCode for the project in the current directory
 function xc {
   for file in ./*.{xcworkspace,xcodeproj}; do
     if [ -e $file ]; then
@@ -125,6 +126,25 @@ function xc {
     fi
   done
 }
+
+# Open simulators
+function simulators {
+  # Open Simulator with iPhone X
+  open -a Simulator --args -CurrentDeviceUDID 8E51DCC4-83C4-4C24-8049-6F4B5F7ADEB7
+
+  # Boot iPad after waiting for Simulator to open
+  sleep 5 && xcrun simctl boot 3754668E-51C1-4795-997A-92F59BC62F59
+
+  # Open the provided URL in all devices
+  sleep 5 && \
+    xcrun simctl openurl 8E51DCC4-83C4-4C24-8049-6F4B5F7ADEB7 "http://localhost:3000" && \
+    xcrun simctl openurl 3754668E-51C1-4795-997A-92F59BC62F59 "http://localhost:3000"
+
+  # Open Android Emulator with Pixel 2
+  # Requires that a device with the name "pixel2" exists
+  ~/Library/Android/sdk/tools/emulator -avd pixel2 &
+}
+
 ###-begin-npm-completion-###
 #
 # npm command completion script
