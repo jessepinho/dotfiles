@@ -1,4 +1,5 @@
 anki
+arduino
 evernote
 private-internet-access
 spotify
