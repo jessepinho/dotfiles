@@ -17,14 +17,14 @@ brew install vim --with-lua --force
 brew tap caskroom/cask
 brew cask install $(cat brew/brew-cask-packages.txt)
 
-# Install packages for home computer if HOME env variable is set
-if [ -z ${HOME+x} ]; then
+# Install packages for home computer if IS_HOME env variable is set
+if ! [ -z ${IS_HOME+x} ]; then
   brew install $(cat brew/brew-packages.home.txt)
   brew cask install $(cat brew/brew-cask-packages.home.txt)
 fi
 
-# Install packages for work computer if WORK env variable is set
-if ! [ -z ${WORK+x} ]; then
+# Install packages for work computer if IS_WORK env variable is set
+if ! [ -z ${IS_WORK+x} ]; then
   brew cask install $(cat brew/brew-cask-packages.work.txt)
 fi
 
