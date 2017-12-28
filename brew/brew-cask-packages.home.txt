@@ -2,6 +2,7 @@ anki
 arduino
 evernote
 private-internet-access
+scrivener
 spotify
 telegram
 vlc
