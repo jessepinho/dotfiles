@@ -133,12 +133,12 @@ function simulators {
   open -a Simulator --args -CurrentDeviceUDID 8E51DCC4-83C4-4C24-8049-6F4B5F7ADEB7
 
   # Boot iPad after waiting for Simulator to open
-  sleep 5 && xcrun simctl boot 3754668E-51C1-4795-997A-92F59BC62F59
+  sleep 5 && xcrun simctl boot 30F5A835-AB9B-4AA0-804E-E86C366EA7B0
 
   # Open the provided URL in all devices
   sleep 5 && \
     xcrun simctl openurl 8E51DCC4-83C4-4C24-8049-6F4B5F7ADEB7 "http://localhost:3000" && \
-    xcrun simctl openurl 3754668E-51C1-4795-997A-92F59BC62F59 "http://localhost:3000"
+    xcrun simctl openurl 30F5A835-AB9B-4AA0-804E-E86C366EA7B0 "http://localhost:3000"
 
   # Open Android Emulator with Pixel 2
   # Requires that a device with the name "pixel2" exists
