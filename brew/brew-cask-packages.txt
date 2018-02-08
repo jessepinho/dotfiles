@@ -4,6 +4,7 @@ appcleaner
 docker
 dropbox
 duet
+firefox
 google-chrome
 licecap
 macvim
