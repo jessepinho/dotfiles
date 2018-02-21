@@ -25,7 +25,13 @@ defaults write com.evernote.Evernote runHelperWithoutMainApp -bool false
 defaults write com.evernote.Evernote runHelperAtLogin -bool false
 
 # # Finder
+# Show full path in title bar
+# See https://www.defaults-write.com/display-full-posix-path-in-os-x-finder-title-bar/
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # ## Preferences
+# ### Advanced
+# Show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # ### General
 # New Finder windows show: jessepinho (home directory)
 # Other options:
