@@ -11,4 +11,5 @@ mysql
 nvm
 speedtest_cli
 tmate
+tmux
 yarn
