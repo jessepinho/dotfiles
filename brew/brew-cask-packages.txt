@@ -8,7 +8,6 @@ firefox
 google-chrome
 licecap
 macvim
-now
 sequel-pro
 sizeup
 skyfonts
