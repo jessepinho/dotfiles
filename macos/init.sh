@@ -152,3 +152,9 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGest
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -int 2
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 0
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -int 0
+
+# # TextEdit
+# ## Preferences
+# ### New Document tab
+# Format: Plain text
+defaults write com.apple.TextEdit RichText -bool false
