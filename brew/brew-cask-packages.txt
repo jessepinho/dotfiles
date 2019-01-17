@@ -3,14 +3,12 @@ anki
 appcleaner
 docker
 dropbox
-duet
 firefox
 google-chrome
 licecap
 macvim
 sequel-pro
 sizeup
-skyfonts
 skype
 sketch
 slack
