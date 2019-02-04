@@ -14,6 +14,9 @@ export PS2="> " # Format the continuation interactive prompt
 export RAILS_ENV=development
 export VISUAL="$EDITOR"
 
+# Set up thefuck (https://github.com/nvbn/thefuck)
+eval $(thefuck --alias)
+
 # Set up NVM.
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
