@@ -103,8 +103,8 @@ defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write ~/Library/Preferences/com.apple.universalaccess.plist closeViewPanningMode -int 0
 # ## Date & Time
 # ### Clock
-# Date options: Show the day of the week & Show date ("Sun Jan 1 13:00")
-defaults write com.apple.menuextra.clock DateFormat "EEE MMM d H:mm"
+# Date options: Show the day of the week; Show date; and Display the time with seconds ("Sun Jan 1 13:00:00")
+defaults write com.apple.menuextra.clock DateFormat "EEE MMM d H:mm:ss"
 # ## Dock
 # Minimize windows using: Scale effect
 defaults write com.apple.dock mineffect scale
