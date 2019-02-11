@@ -96,11 +96,6 @@ let g:airline#extensions#default#layout = [
       \ [ 'a', 'z', 'warning' ]
       \ ]
 
-" UltiSnips "
-"""""""""""""
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-
 " neocomplete "
 """""""""""""""
 " Disable AutoComplPop.
