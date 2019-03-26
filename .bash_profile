@@ -9,6 +9,7 @@ export NODE_ENV=development
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
 export PATH="~/Library/Python/2.7/bin:$PATH" # Add pip executables to the path
 export PATH="./node_modules/.bin:$PATH" # Make node executables in the current node project accessible
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig" # Needed for the `canvas` NPM module
 export PS1="\W$ " # Format the bash prompt to only show the current directory
 export PS2="> " # Format the continuation interactive prompt
 export RAILS_ENV=development

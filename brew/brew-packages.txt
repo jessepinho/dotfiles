@@ -6,6 +6,7 @@ git
 highlight
 hub
 jq
+libffi
 memcached
 mysql
 nvm
