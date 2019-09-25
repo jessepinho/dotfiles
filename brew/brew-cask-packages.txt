@@ -12,6 +12,7 @@ sizeup
 skype
 sketch
 slack
+spotify
 the-unarchiver
 visual-studio-code
 zoomus
