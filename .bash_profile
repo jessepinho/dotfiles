@@ -22,9 +22,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
-# Load RVM into a shell session *as a function*.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 alias android-emulator='~/Library/Android/sdk/tools/emulator -avd pixel2 &'
 alias be='bundle exec'
 alias dotfiles='cd ~/.dotfiles'
