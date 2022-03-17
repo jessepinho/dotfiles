@@ -1,17 +1,8 @@
-ack
 autossh
-awscli
-cowsay
 git
-highlight
 hub
 jq
-libffi
-memcached
-mysql
 nvm
 speedtest_cli
 thefuck
-tmate
-tmux
 yarn
