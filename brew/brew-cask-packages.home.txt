@@ -1,8 +1,5 @@
 1password
-arduino
 evernote
-private-internet-access
 scrivener
-telegram
 vlc
 whatsapp
