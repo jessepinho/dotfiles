@@ -6,11 +6,9 @@ dropbox
 firefox
 google-chrome
 licecap
-macvim
 sequel-pro
 sizeup
 skype
-sketch
 slack
 spotify
 the-unarchiver
