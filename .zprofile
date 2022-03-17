@@ -3,9 +3,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Use vim key bindings.
 set -o vi
 
-# Use git bash completion.
-source ~/.git-completion.bash
-
 export EDITOR=/opt/homebrew/bin/vim # Use vim as the default editor.
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
 export PATH="./node_modules/.bin:$PATH" # Make node executables in the current node project accessible

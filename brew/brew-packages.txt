@@ -2,7 +2,9 @@ autossh
 git
 hub
 jq
+neovim
 nvm
 speedtest_cli
 thefuck
 yarn
+zsh-completion
