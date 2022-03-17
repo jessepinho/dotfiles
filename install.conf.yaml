@@ -9,6 +9,7 @@
     ~/.rspec: rspec
     ~/.vim: vim/
     ~/.vimrc: vimrc
+    ~/.zprofile: .zprofile
 - shell:
   - ["git submodule update --init --recursive", "Installing submodules"]
   - ["cd vim/bundle/vimproc.vim && make", "Compiling vimproc, a dependency of tsuquyomi"]
