@@ -50,14 +50,11 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # # Misc
 # Don't auto-connect with Bluetooth devices
 # Found at http://apple.stackexchange.com/a/226169/66224
-sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist DontPageAudioDevices 1
+# sudo defaults write /Library/Preferences/com.apple.Bluetooth.plist DontPageAudioDevices 1
 # Show all files (including dotfiles)
 defaults write com.apple.finder AppleShowAllFiles YES
 # Show the percentage in the battery menu item
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-# Customize the icons in the Touch Bar
-defaults write com.apple.controlstrip MiniCustomized '( "com.apple.system.screen-lock", "com.apple.system.sleep", "com.apple.system.volume", "com.apple.system.mute" )'
-defaults write com.apple.controlstrip FullCustomized '( "com.apple.system.group.brightness", "com.apple.system.mission-control", "com.apple.system.dashboard", "com.apple.system.group.keyboard-brightness", "com.apple.system.group.media", "com.apple.system.group.volume", "com.apple.system.screen-lock" )'
 # Customize the icons in the menu bar
 defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
@@ -68,7 +65,7 @@ defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/User.menu" \
 	"/System/Library/CoreServices/Menu Extras/Volume.menu"
 # Only show the dock after a 2-second delay (to make sure I mean it)
-defaults write com.apple.dock autohide-delay -float 2
+# defaults write com.apple.dock autohide-delay -float 2
 # Disable the dashboard
 # https://www.howtogeek.com/tips/how-to-disable-the-useless-dashboard-on-mac-os-x/
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
@@ -126,7 +123,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Time format: 24-Hour Time
 defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
 # Temperature: Celsius
-defaults write ~/Library/Preferences/.GlobalPreferences AppleTemperatureUnit Celsius
+# defaults write ~/Library/Preferences/.GlobalPreferences AppleTemperatureUnit Celsius
 # ## Mouse
 # Secondary click
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
