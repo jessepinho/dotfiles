@@ -23,7 +23,7 @@ function installCasksFromFile {
 installFromFile brew/brew-packages.txt
 
 # Special cases
-if ! brew ls --versions vim; then brew install vim --with-lua --force; fi
+if ! brew ls --versions vim; then brew install vim --force; fi
 
 # Casks
 brew tap caskroom/cask
