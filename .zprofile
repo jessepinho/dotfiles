@@ -39,11 +39,10 @@ alias gpohfnv='git push origin head --force --no-verify'
 alias gpohu='git push origin head -u'
 alias gpohunv='git push origin head -u --no-verify'
 alias ll='ls -alh'
-alias sbp='source ~/.bash_profile'
+alias szp='source ~/.zprofile'
 alias simplehttpserver='python -m SimpleHTTPServer 8000'
 alias untar='tar -xvzf'
-alias vbp='vim ~/.bash_profile'
-alias vbpl='vim ~/.bash_profile_local'
+alias vzp='vim ~/.zprofile'
 
 checkPort() {
   lsof -i tcp:$1
@@ -54,6 +53,11 @@ iterm() {
   local message="Changing iTerm profile to $1."
   echo -e "$message\033]50;SetProfile=$1\a"
 }
+
+# Include a local version of .zprofile, if it exists.
+if [ -f ~/.zprofile_local ]; then
+  source ~/.zprofile_local
+fi
 
 # Prune merged branches. Thanks to http://stackoverflow.com/a/6127884/974981
 function gpm {
