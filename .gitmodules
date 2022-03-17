@@ -40,3 +40,6 @@
 [submodule "vim/bundle/nerdtree-git-plugin"]
 	path = vim/bundle/nerdtree-git-plugin
 	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+[submodule "vim/bundle/vimproc.vim"]
+	path = vim/bundle/vimproc.vim
+	url = git@github.com:Shougo/vimproc.vim.git
