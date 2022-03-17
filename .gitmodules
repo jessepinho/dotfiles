@@ -40,9 +40,6 @@
 [submodule "vim/bundle/vim-ember-hbs"]
 	path = vim/bundle/vim-ember-hbs
 	url = git@github.com:joukevandermaas/vim-ember-hbs.git
-[submodule "vim/bundle/vim-stylus"]
-	path = vim/bundle/vim-stylus
-	url = git@github.com:wavded/vim-stylus.git
 [submodule "vim/bundle/tsuquyomi"]
 	path = vim/bundle/tsuquyomi
 	url = git@github.com:Quramy/tsuquyomi.git
