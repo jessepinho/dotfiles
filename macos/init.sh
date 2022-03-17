@@ -101,7 +101,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 # ## Date & Time
 # ### Clock
 # Date options: Show the day of the week; Show date; and Display the time with seconds ("Sun Jan 1 13:00:00")
-defaults write com.apple.menuextra.clock DateFormat "EEE MMM d H:mm:ss"
+defaults write com.apple.menuextra.clock DateFormat "EEE MMM d h:mm:ss a"
 # ## Dock
 # Minimize windows using: Scale effect
 defaults write com.apple.dock mineffect scale
@@ -121,7 +121,7 @@ defaults write -g InitialKeyRepeat -int 15
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # ## Language & Region
 # Time format: 24-Hour Time
-defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
+defaults write NSGlobalDomain AppleICUForce24HourTime -bool false
 # Temperature: Celsius
 # defaults write ~/Library/Preferences/.GlobalPreferences AppleTemperatureUnit Celsius
 # ## Mouse
