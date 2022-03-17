@@ -41,6 +41,10 @@ alias simplehttpserver='python -m SimpleHTTPServer 8000'
 alias untar='tar -xvzf'
 alias vzp='vim ~/.zprofile'
 
+# Copied over from old .bash_profile. Not sure what it's for, so commenting it
+# out for now.
+# ulimit -n 4096
+
 checkPort() {
   lsof -i tcp:$1
 }
