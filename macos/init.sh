@@ -94,10 +94,10 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 # ### Zoom
 # Use scroll gesture with modifer keys to zoom: ^ Control
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 # #### Zoom style > Options...
 # When zoomed in, the screen image moves: Continuously with pointer
-defaults write ~/Library/Preferences/com.apple.universalaccess.plist closeViewPanningMode -int 0
+# defaults write ~/Library/Preferences/com.apple.universalaccess.plist closeViewPanningMode -int 0
 # ## Date & Time
 # ### Clock
 # Date options: Show the day of the week; Show date; and Display the time with seconds ("Sun Jan 1 13:00:00")
