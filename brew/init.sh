@@ -15,7 +15,7 @@ function installFromFile {
 
 function installCasksFromFile {
   while read line; do
-    if ! brew cask ls --versions $line; then brew cask install $line; fi
+    if ! brew ls --cask --versions $line; then brew install $line --cask; fi
   done < $1
 }
 

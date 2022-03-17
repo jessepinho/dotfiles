@@ -1,5 +1,4 @@
 adobe-creative-cloud
-anki
 appcleaner
 docker
 dropbox
@@ -13,4 +12,4 @@ slack
 spotify
 the-unarchiver
 visual-studio-code
-zoomus
+zoom
