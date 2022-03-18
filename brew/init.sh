@@ -26,7 +26,7 @@ installFromFile brew/brew-packages.txt
 if ! brew ls --versions vim; then brew install vim --force; fi
 
 # Casks
-brew tap caskroom/cask
+brew tap homebrew/cask
 installCasksFromFile brew/brew-cask-packages.txt
 
 # Install packages for home computer if IS_HOME env variable is set

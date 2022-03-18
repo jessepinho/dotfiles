@@ -1,5 +1,6 @@
 1password
 evernote
 scrivener
+signal
 vlc
 whatsapp
