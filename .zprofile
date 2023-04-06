@@ -6,6 +6,7 @@ set -o vi
 export EDITOR=/opt/homebrew/bin/vim # Use vim as the default editor.
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
 export PATH="./node_modules/.bin:$PATH" # Make node executables in the current node project accessible
+export PATH="/opt/homebrew/Cellar/python@3.11/3.11.2_1/libexec/bin:$PATH" # Make python executable (only `python3` is available by default from `brew install python`)
 export PS1="\W$ " # Format the bash prompt to only show the current directory
 export PS2="> " # Format the continuation interactive prompt
 export RAILS_ENV=development
