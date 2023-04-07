@@ -1,7 +1,12 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(rbenv init - zsh)"
 
 # Use vim key bindings.
 set -o vi
+
+# Allow use of Ctrl+R to reverse-search through commands
+bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 export EDITOR=/opt/homebrew/bin/vim # Use vim as the default editor.
 export PATH="/usr/local/heroku/bin:$PATH" # Added by the Heroku Toolbelt
